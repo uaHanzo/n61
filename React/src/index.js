@@ -11,10 +11,14 @@ import './gallery';
 import './text';
 import './buttons';
 import './cop';
-import Wether from './weather.js';
+import Weather from './weather';
+import Currency from './currency';
 
 
-ReactDOM.render(<Wether />, document.getElementById("test"));
+
+
+ReactDOM.render(<Weather />, document.getElementById("weather"));
+ReactDOM.render(<Currency />, document.getElementById("currency"));
 
 
 
