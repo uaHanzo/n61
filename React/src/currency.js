@@ -32,8 +32,14 @@ class CurrencyDisplay extends React.Component {
     const { currencyData } = this.state;
 
     if (!currencyData) return <div>Loading</div>;
-  
-    return <div>{JSON.stringify(currencyData)}</div>;
+    let currencies = [];
+    for (var i=0; i<currencyData.length; i++){
+       currencies.push(
+        <div><span>{currencyData[i].ccy}</span> <span>{currencyData[i].buy}</span> <span>{currencyData[i].sale}</span></div>
+       );
+    }
+    
+    return (<div>{currencies}</div>);
   }
 }
 
