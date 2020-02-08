@@ -1,4 +1,6 @@
 import React from 'react';
+import usd from './usd2.jpeg';
+
 
 class CurrencyDisplay extends React.Component {
    constructor() {
@@ -33,11 +35,12 @@ class CurrencyDisplay extends React.Component {
 
     if (!currencyData) return <div>Loading</div>;
     let currencies = [];
-    for (var i=0; i<currencyData.length; i++){
-       currencies.push(
-        <div><span>{currencyData[i].ccy}</span> <span>{currencyData[i].buy}</span> <span>{currencyData[i].sale}</span></div>
-       );
-    }
+    {currencies.push(
+        <div id="cur">
+          <a><img src={usd} alt="usd" width="35" height="35"/></a>
+          <span>{currencyData[0].ccy}</span> <span>{currencyData[0].buy}</span> <span>{currencyData[0].sale}</span>
+        </div>
+           );}
     
     return (<div>{currencies}</div>);
   }

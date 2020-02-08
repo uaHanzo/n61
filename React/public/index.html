@@ -26,19 +26,49 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     
-    <title>Marsel on React</title>
+    <title>Marseille on React</title>
   </head>
   <body>
     <div id="head"></div>
     <div id="weather"></div>
+    <div id="currency"></div>
+    
+
+    <script>
+      window.onload= function() {
+	document.getElementById('button').onclick = function() {
+		openbox('converter', this);
+		return false;
+	};
+};
+function openbox(id, button) {
+	var div = document.getElementById(id);
+	if(div.style.display == 'block') {
+		div.style.display = 'none';
+		button.innerHTML = 'Converter';
+	}
+	else {
+		div.style.display = 'block';
+		button.innerHTML = 'Close';
+	}
+}
+
+    </script>
+   
+    <button id="button" href="#">Converter</button>
+    <div id="converter" style="display: none;"></div>
+
+    
+    
+    
     <div id="carousel"></div>
     <div id="gallery"></div>
     <div id="text"></div>
     <div id="buttons"></div>
     <div id="cop"></div>
-    <div id="currency"></div>
-   
-   
+    
+    
+    
     
     <!--
       This HTML file is a template.

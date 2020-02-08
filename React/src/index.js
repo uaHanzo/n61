@@ -13,12 +13,14 @@ import './buttons';
 import './cop';
 import Weather from './weather';
 import Currency from './currency';
+import './converter';
 
 
 
 
 ReactDOM.render(<Weather />, document.getElementById("weather"));
 ReactDOM.render(<Currency />, document.getElementById("currency"));
+
 
 
 

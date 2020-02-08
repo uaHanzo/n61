@@ -34,11 +34,11 @@ export default class MyCarousel extends Component {
       centered
       infinite
       >
-        <img src={img1} width="950" height="550" />
-        <img src={img2} width="950" height="550" />
-        <img src={img3} width="950" height="550" />
-        <img src={img4} width="950" height="550" />
-        <img src={img5} width="950" height="550" />
+        <img src={img1} alt="1" width="950" height="550" />
+        <img src={img2} alt="2" width="950" height="550" />
+        <img src={img3} alt="3" width="950" height="550" />
+        <img src={img4} alt="4" width="950" height="550" />
+        <img src={img5} alt="5" width="950" height="550" />
       </Carousel>
       <Dots value={this.state.value} onChange={this.onChange} number={5} 
       />
